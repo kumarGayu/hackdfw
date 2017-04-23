@@ -18,21 +18,21 @@ class RestaurantDetails:
         self.client = Client(auth)
 
     def get_business(self, lat,long):
-        res = []
+        res = {'result':[]}
         businesses = self.rest_search(lat,long).businesses
         for b in businesses:
             res_details={}
             res_details['name'] = b.name
             res_details['location'] = [b.location.coordinate.latitude, b.location.coordinate.longitude]
             res_details['rating'] = b.rating
-            res.append(res_details)
+            res['result'].append(res_details)
         return res
 
     def rest_search(self, lat, long):
         params = {
             'limit' : conf['limit_of_restaurants'],
             'term' : conf['searchKey'],
-            'radius_filter' : 8000 #for 5 miles
+            'radius_filter' : 800 #for 5 miles
         }
 
         return self.client.search_by_coordinates(lat, long, **params)
