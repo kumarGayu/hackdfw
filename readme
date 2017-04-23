@@ -3,27 +3,26 @@ Eco friendly, navigation suggestion and secured car pool. The app shows the foot
 
 Basic Features:
 	1. Shows statistics on the dicreasing emission CO2 and calories based on the mode of travel to be choosed and the total reduction until date.
-	2. Secured Car-pool
+	
+	2. Suggesting the mode of Transportation
+		- Finding the different modes of transportation between source and destination 
+		- Based on the duration of the transportation, the app suggests the mode of transportation based on the poriority and savings.
+	3. Secured Car-pool
 		- Shows the available rides at the time of travel for the given source and destination place
 		- Monitors the pooled trip and sends the msg to the 911 if enabled to motivate the car pool.
 		- Also user can click on emergency to send message to the 911 to motivate the car pool.
 		- Combining different car pool apis available based on the area
 		- Also ride sharing based on user profile to motivate the car pool
-	3. Suggesting the mode of Transportation
-		- Finding the different modes of transportation between source and destination 
-		- Based on the duration of the transportation, the app suggests the mode of transportation based on the poriority and savings.
 
 	4. During the travel, it shows the nearby restaurants which serves the organic food derivatives. note: data has been read from yelp api.
 
 Social Impact:	
-	- Improves the human relationship
 	- Reduces the air pollution significantly
 	- Reduces the traffic 
 	- Improves the healthiness
-	- Improving organic food utilization
-	- Creating the awareness in individuals by showing the footprint on reduction
+	- Promotes organic food utilization
+	- Creates the awareness in individuals by showing the carbon reduction footprint
+	- Improves the human relationship
 
 Scalability:
-	- We have implemented several part of it therefore should be scalable to develop.
-
-
+	- We have implemented several part of it therefore should be scalable to develop
